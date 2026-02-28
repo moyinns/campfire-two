@@ -1,22 +1,22 @@
 extends Node2D
 var current_index = 0
 
-@onready var name_label = $NameLabel
-@onready var age_label = $AgeLabel
-@onready var bio_label = $BioLabel
-@onready var crime_label = $CrimeLabel
-@onready var gender_label = $GenderLabel
+@onready var name_label = $name_label
+@onready var age_label = $age_label
+@onready var bio_label = $bio_label
+@onready var crime_label = $crime_label
+@onready var gender_label = $gender_label
 
 func _ready() -> void:
 	update_card(current_index)
 
 func update_card(index):
 	var character = list[index]
-	name_label.text = character[0]
-	age_label.text = character[1]
-	bio_label.text = character[2]
-	crime_label.text = character[3]
-	gender_label.text = character[4]
+	name_label.text = str(character[0])
+	age_label.text = str(character[1])
+	bio_label.text = str(character[2])
+	crime_label.text = str(character[3])
+	#gender_label.text = str(character[4])
 
 func next_character():
 	current_index = (current_index + 1) % list.size()

@@ -137,15 +137,16 @@ autowrap_mode = 3
 
 [node name="run success_fail" type="Label" parent="."]
 visible = false
-offset_left = 347.0
+offset_left = 6.0
 offset_top = 37.0
-offset_right = 804.0
+offset_right = 1142.0
 offset_bottom = 142.0
 theme_override_colors/font_outline_color = Color(0.33660764, 0.3366076, 0.3366076, 1)
 theme_override_constants/outline_size = 6
 theme_override_fonts/font = ExtResource("6_gm4vt")
 theme_override_font_sizes/font_size = 100
 text = "run successful!"
+horizontal_alignment = 1
 
 [node name="attacks used" type="Label" parent="."]
 visible = false
@@ -156,9 +157,10 @@ offset_bottom = 142.0
 theme_override_colors/font_outline_color = Color(0.33660764, 0.3366076, 0.3366076, 1)
 theme_override_constants/outline_size = 6
 theme_override_fonts/font = ExtResource("6_gm4vt")
-theme_override_font_sizes/font_size = 50
+theme_override_font_sizes/font_size = 30
 text = "run successful!"
 horizontal_alignment = 1
+autowrap_mode = 3
 
 [connection signal="pressed" from="player + ar/attack_button" to="." method="_on_attack_button_pressed"]
 [connection signal="pressed" from="player + ar/run_button" to="." method="_on_run_button_pressed"]

@@ -1,7 +1,8 @@
-[gd_scene load_steps=5 format=3 uid="uid://plmqsbmg80s8"]
+[gd_scene load_steps=6 format=3 uid="uid://plmqsbmg80s8"]
 
 [ext_resource type="Script" uid="uid://c7epx26tvyid2" path="res://deciding_screen/deciding_screen.gd" id="1_xpyhy"]
 [ext_resource type="Texture2D" uid="uid://tssn5dmyv7hg" path="res://images + fonts/table + template.PNG" id="2_tv4ji"]
+[ext_resource type="FontFile" uid="uid://washjx6a7q1o" path="res://images + fonts/Alice_in_Wonderland_3.ttf" id="3_tv4ji"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ewi7j"]
 bg_color = Color(0.37684467, 0.5253912, 0.2702549, 1)
@@ -28,44 +29,56 @@ offset_bottom = 40.0
 texture = ExtResource("2_tv4ji")
 
 [node name="name_label" type="Label" parent="."]
-offset_left = 183.0
-offset_top = 55.0
-offset_right = 288.0
-offset_bottom = 100.0
+offset_left = 186.0
+offset_top = 61.0
+offset_right = 291.0
+offset_bottom = 106.0
+theme_override_colors/font_color = Color(0.41960785, 0.41960785, 0.41960785, 1)
+theme_override_fonts/font = ExtResource("3_tv4ji")
 theme_override_font_sizes/font_size = 28
 text = "KAREN"
 
 [node name="age_label" type="Label" parent="."]
-offset_left = 163.0
-offset_top = 103.0
-offset_right = 268.0
-offset_bottom = 148.0
+offset_left = 166.0
+offset_top = 115.0
+offset_right = 271.0
+offset_bottom = 160.0
+theme_override_colors/font_color = Color(0.41960785, 0.41960785, 0.41960785, 1)
+theme_override_fonts/font = ExtResource("3_tv4ji")
 theme_override_font_sizes/font_size = 32
 text = "32"
 
 [node name="gender_label" type="Label" parent="."]
-offset_left = 216.0
-offset_top = 169.0
+offset_left = 214.0
+offset_top = 181.0
 offset_right = 321.0
-offset_bottom = 214.0
+offset_bottom = 226.0
+theme_override_colors/font_color = Color(0.41960785, 0.41960785, 0.41960785, 1)
+theme_override_fonts/font = ExtResource("3_tv4ji")
 theme_override_font_sizes/font_size = 32
 text = "FEMALE"
 
-[node name="description_label" type="Label" parent="."]
-offset_left = 474.0
-offset_top = 244.0
-offset_right = 550.0
-offset_bottom = 267.0
+[node name="bio_label" type="Label" parent="."]
+offset_left = 344.0
+offset_top = 269.0
+offset_right = 744.0
+offset_bottom = 292.0
+theme_override_colors/font_color = Color(0.41981313, 0.41981313, 0.4198131, 1)
+theme_override_constants/line_spacing = -5
 theme_override_font_sizes/font_size = 16
 text = "KAREN"
+autowrap_mode = 3
 
-[node name="worst_label" type="Label" parent="."]
-offset_left = 477.0
-offset_top = 428.0
-offset_right = 553.0
-offset_bottom = 451.0
+[node name="crime_label" type="Label" parent="."]
+offset_left = 341.0
+offset_top = 449.0
+offset_right = 743.0
+offset_bottom = 472.0
+theme_override_colors/font_color = Color(0.41960785, 0.41960785, 0.41960785, 1)
+theme_override_constants/line_spacing = -5
 theme_override_font_sizes/font_size = 16
 text = "KAREN"
+autowrap_mode = 3
 
 [node name="heaven_button" type="Button" parent="."]
 offset_left = 810.0
