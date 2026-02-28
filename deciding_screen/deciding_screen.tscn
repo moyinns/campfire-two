@@ -28,10 +28,10 @@ offset_bottom = 40.0
 texture = ExtResource("2_tv4ji")
 
 [node name="name_label" type="Label" parent="."]
-offset_left = 179.0
-offset_top = 46.0
-offset_right = 284.0
-offset_bottom = 91.0
+offset_left = 183.0
+offset_top = 55.0
+offset_right = 288.0
+offset_bottom = 100.0
 theme_override_font_sizes/font_size = 28
 text = "KAREN"
 
