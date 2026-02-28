@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bffl0c4kpj8b3"
+path="res://.godot/imported/ytmp3free.cc_song-of-unhealing-the-legend-of-zelda-majoras-mask-youtubemp3free.org.mp3-589dffc0314fa40853af7297135bd48f.mp3str"
+
+[deps]
+
+source_file="res://images + fonts/ytmp3free.cc_song-of-unhealing-the-legend-of-zelda-majoras-mask-youtubemp3free.org.mp3"
+dest_files=["res://.godot/imported/ytmp3free.cc_song-of-unhealing-the-legend-of-zelda-majoras-mask-youtubemp3free.org.mp3-589dffc0314fa40853af7297135bd48f.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

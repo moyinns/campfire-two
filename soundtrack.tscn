@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://couc7dqfvjned"]
+
+[ext_resource type="AudioStream" uid="uid://bnycjrd2w87v7" path="res://opening screen/ytmp3free.cc_song-of-unhealing-the-legend-of-zelda-majoras-mask-youtubemp3free.org.mp3" id="1_14doj"]
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" unique_id=2093442189]
+stream = ExtResource("1_14doj")
+autoplay = true

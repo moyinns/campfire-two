@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://caml3u7j4twnm"]
+
+[node name="SelectionScreen" type="Node2D" unique_id=837013844]
+
+[node name="Characterred" type="TextureButton" parent="." unique_id=327291488]
+offset_left = 136.0
+offset_top = -188.0
+offset_right = 668.0
+offset_bottom = 281.0
+metadata/_edit_use_anchors_ = true
+
+[node name="Charactergrey" type="TextureButton" parent="." unique_id=1166971121]
+offset_left = -683.0
+offset_top = -174.0
+offset_right = 405.0
+offset_bottom = 786.0
+
+[connection signal="pressed" from="Characterred" to="." method="_on_characterred_pressed"]
+[connection signal="pressed" from="Charactergrey" to="." method="_on_charactergrey_pressed"]
