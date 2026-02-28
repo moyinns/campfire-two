@@ -1,5 +1,4 @@
 extends Node
-
 var characterColour = "black"
 var health = 100
 var stamina = 100
