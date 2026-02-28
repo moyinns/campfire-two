@@ -27,7 +27,7 @@ func _process(delta: float) -> void:
 	if Globals.enemy_health < 0:
 		run_success_fail.text = "boss battle completed!"
 		run_success_fail.visble = true
-		await get_tree().create_timer(3.0).timeout
+		await get_tree().create_timer(5.0).timeout
 		run_success_fail.visible = false
 		get_tree().quit() #FIX THIS
 

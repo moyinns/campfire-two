@@ -82,3 +82,6 @@ offset_right = 1119.0
 offset_bottom = 404.0
 theme_override_styles/normal = SubResource("StyleBoxFlat_tk3b5")
 text = "HELL"
+
+[connection signal="pressed" from="heaven_button" to="." method="_on_heaven_button_pressed"]
+[connection signal="pressed" from="hell_button" to="." method="_on_hell_button_pressed"]
