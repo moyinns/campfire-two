@@ -1,0 +1,168 @@
+[gd_scene load_steps=9 format=3 uid="uid://i28jfn03845j"]
+
+[ext_resource type="Script" uid="uid://c5x2e7wgdn3kk" path="res://boss battle screen/boss_battle_screen.gd" id="1_lt800"]
+[ext_resource type="Texture2D" uid="uid://cqpb3j3ignf0w" path="res://images + fonts/background boss battle.PNG" id="2_dy2qp"]
+[ext_resource type="Texture2D" uid="uid://bsgdqbr55lpch" path="res://images + fonts/empty boss battle thing.PNG" id="3_sct6d"]
+[ext_resource type="Texture2D" uid="uid://yobvd8vflwu8" path="res://images + fonts/attack buttons.PNG" id="4_8tji4"]
+[ext_resource type="Texture2D" uid="uid://cm4vtc3agts1y" path="res://images + fonts/grim reaper png.png" id="5_wysfl"]
+[ext_resource type="FontFile" uid="uid://washjx6a7q1o" path="res://images + fonts/Alice_in_Wonderland_3.ttf" id="6_gm4vt"]
+[ext_resource type="FontFile" uid="uid://b362dp5ycb451" path="res://images + fonts/OldLondon.ttf" id="7_w6r4g"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_pedyo"]
+
+[node name="boss battle screen" type="Node2D"]
+script = ExtResource("1_lt800")
+
+[node name="empty boss battle" type="TextureRect" parent="."]
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("2_dy2qp")
+
+[node name="player + ar" type="TextureRect" parent="."]
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("3_sct6d")
+
+[node name="attack_button" type="Button" parent="player + ar"]
+layout_mode = 0
+offset_left = 430.0
+offset_top = 474.0
+offset_right = 840.0
+offset_bottom = 527.0
+theme_override_colors/font_color = Color(0.35156232, 0.35156316, 0.35156256, 1)
+theme_override_fonts/font = ExtResource("6_gm4vt")
+theme_override_font_sizes/font_size = 50
+theme_override_styles/normal = SubResource("StyleBoxEmpty_pedyo")
+text = "attack"
+
+[node name="run_button" type="Button" parent="player + ar"]
+layout_mode = 0
+offset_left = 431.0
+offset_top = 540.0
+offset_right = 841.0
+offset_bottom = 593.0
+theme_override_colors/font_color = Color(0.35156232, 0.35156316, 0.35156256, 1)
+theme_override_fonts/font = ExtResource("6_gm4vt")
+theme_override_font_sizes/font_size = 50
+theme_override_styles/normal = SubResource("StyleBoxEmpty_pedyo")
+text = "run
+"
+
+[node name="health" type="Label" parent="player + ar"]
+layout_mode = 0
+offset_left = 77.0
+offset_top = 508.0
+offset_right = 350.0
+offset_bottom = 539.0
+theme_override_colors/font_color = Color(0.550972, 0.03656125, 0.21928233, 1)
+theme_override_fonts/font = ExtResource("7_w6r4g")
+theme_override_font_sizes/font_size = 32
+text = "health:"
+
+[node name="stamina" type="Label" parent="player + ar"]
+layout_mode = 0
+offset_left = 76.0
+offset_top = 550.0
+offset_right = 349.0
+offset_bottom = 581.0
+theme_override_colors/font_color = Color(0.25992286, 0.38651082, 0.42087704, 1)
+theme_override_fonts/font = ExtResource("7_w6r4g")
+theme_override_font_sizes/font_size = 32
+text = "stamina:"
+
+[node name="player" type="TextureRect" parent="player + ar"]
+layout_mode = 0
+offset_left = 30.0
+offset_top = 203.0
+offset_right = 420.66666
+offset_bottom = 496.0
+texture = ExtResource("5_wysfl")
+
+[node name="attack" type="TextureRect" parent="."]
+offset_right = 1152.0
+offset_bottom = 648.0
+texture = ExtResource("4_8tji4")
+
+[node name="attack1_button3" type="Button" parent="attack"]
+layout_mode = 0
+offset_left = 444.0
+offset_top = 199.0
+offset_right = 628.0
+offset_bottom = 292.0
+theme_override_colors/font_color = Color(0.35156232, 0.35156316, 0.35156256, 1)
+theme_override_fonts/font = ExtResource("6_gm4vt")
+theme_override_font_sizes/font_size = 32
+theme_override_styles/normal = SubResource("StyleBoxEmpty_pedyo")
+text = "ashen chains"
+autowrap_mode = 3
+
+[node name="attack2_button4" type="Button" parent="attack"]
+layout_mode = 0
+offset_left = 635.0
+offset_top = 197.0
+offset_right = 819.0
+offset_bottom = 290.0
+theme_override_colors/font_color = Color(0.35156232, 0.35156316, 0.35156256, 1)
+theme_override_fonts/font = ExtResource("6_gm4vt")
+theme_override_font_sizes/font_size = 32
+theme_override_styles/normal = SubResource("StyleBoxEmpty_pedyo")
+text = "eternal sentence"
+autowrap_mode = 3
+
+[node name="attack3_button5" type="Button" parent="attack"]
+layout_mode = 0
+offset_left = 443.0
+offset_top = 307.0
+offset_right = 627.0
+offset_bottom = 400.0
+theme_override_colors/font_color = Color(0.35156232, 0.35156316, 0.35156256, 1)
+theme_override_fonts/font = ExtResource("6_gm4vt")
+theme_override_font_sizes/font_size = 32
+theme_override_styles/normal = SubResource("StyleBoxEmpty_pedyo")
+text = "soul verdict"
+autowrap_mode = 3
+
+[node name="attack4_button6" type="Button" parent="attack"]
+layout_mode = 0
+offset_left = 636.0
+offset_top = 306.0
+offset_right = 820.0
+offset_bottom = 399.0
+theme_override_colors/font_color = Color(0.35156232, 0.35156316, 0.35156256, 1)
+theme_override_fonts/font = ExtResource("6_gm4vt")
+theme_override_font_sizes/font_size = 32
+theme_override_styles/normal = SubResource("StyleBoxEmpty_pedyo")
+text = "infernal harvest"
+autowrap_mode = 3
+
+[node name="run success_fail" type="Label" parent="."]
+visible = false
+offset_left = 347.0
+offset_top = 37.0
+offset_right = 804.0
+offset_bottom = 142.0
+theme_override_colors/font_outline_color = Color(0.33660764, 0.3366076, 0.3366076, 1)
+theme_override_constants/outline_size = 6
+theme_override_fonts/font = ExtResource("6_gm4vt")
+theme_override_font_sizes/font_size = 100
+text = "run successful!"
+
+[node name="attacks used" type="Label" parent="."]
+visible = false
+offset_left = 347.0
+offset_top = 37.0
+offset_right = 804.0
+offset_bottom = 142.0
+theme_override_colors/font_outline_color = Color(0.33660764, 0.3366076, 0.3366076, 1)
+theme_override_constants/outline_size = 6
+theme_override_fonts/font = ExtResource("6_gm4vt")
+theme_override_font_sizes/font_size = 50
+text = "run successful!"
+horizontal_alignment = 1
+
+[connection signal="pressed" from="player + ar/attack_button" to="." method="_on_attack_button_pressed"]
+[connection signal="pressed" from="player + ar/run_button" to="." method="_on_run_button_pressed"]
+[connection signal="pressed" from="attack/attack1_button3" to="." method="_on_attack_1_button_3_pressed"]
+[connection signal="pressed" from="attack/attack2_button4" to="." method="_on_attack_2_button_4_pressed"]
+[connection signal="pressed" from="attack/attack3_button5" to="." method="_on_attack_3_button_5_pressed"]
+[connection signal="pressed" from="attack/attack4_button6" to="." method="_on_attack_4_button_6_pressed"]
