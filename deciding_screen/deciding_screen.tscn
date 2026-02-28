@@ -1,0 +1,84 @@
+[gd_scene load_steps=5 format=3 uid="uid://plmqsbmg80s8"]
+
+[ext_resource type="Script" uid="uid://c7epx26tvyid2" path="res://deciding_screen/deciding_screen.gd" id="1_xpyhy"]
+[ext_resource type="Texture2D" uid="uid://tssn5dmyv7hg" path="res://images + fonts/table + template.PNG" id="2_tv4ji"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ewi7j"]
+bg_color = Color(0.37684467, 0.5253912, 0.2702549, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.16047391, 0.3178198, 0.14292973, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_tk3b5"]
+bg_color = Color(0.786403, 0.21299762, 0.26016003, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.4031606, 0, 0.019237284, 1)
+
+[node name="deciding_screen" type="Node2D"]
+script = ExtResource("1_xpyhy")
+
+[node name="background" type="TextureRect" parent="."]
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("2_tv4ji")
+
+[node name="name_label" type="Label" parent="."]
+offset_left = 179.0
+offset_top = 46.0
+offset_right = 284.0
+offset_bottom = 91.0
+theme_override_font_sizes/font_size = 28
+text = "KAREN"
+
+[node name="age_label" type="Label" parent="."]
+offset_left = 163.0
+offset_top = 103.0
+offset_right = 268.0
+offset_bottom = 148.0
+theme_override_font_sizes/font_size = 32
+text = "32"
+
+[node name="gender_label" type="Label" parent="."]
+offset_left = 216.0
+offset_top = 169.0
+offset_right = 321.0
+offset_bottom = 214.0
+theme_override_font_sizes/font_size = 32
+text = "FEMALE"
+
+[node name="description_label" type="Label" parent="."]
+offset_left = 474.0
+offset_top = 244.0
+offset_right = 550.0
+offset_bottom = 267.0
+theme_override_font_sizes/font_size = 16
+text = "KAREN"
+
+[node name="worst_label" type="Label" parent="."]
+offset_left = 477.0
+offset_top = 428.0
+offset_right = 553.0
+offset_bottom = 451.0
+theme_override_font_sizes/font_size = 16
+text = "KAREN"
+
+[node name="heaven_button" type="Button" parent="."]
+offset_left = 810.0
+offset_top = 277.0
+offset_right = 1118.0
+offset_bottom = 337.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_ewi7j")
+text = "HEAVEN"
+
+[node name="hell_button" type="Button" parent="."]
+offset_left = 811.0
+offset_top = 344.0
+offset_right = 1119.0
+offset_bottom = 404.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_tk3b5")
+text = "HELL"

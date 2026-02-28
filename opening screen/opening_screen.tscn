@@ -1,6 +1,6 @@
 [gd_scene load_steps=6 format=3 uid="uid://bdmaitnkl5ccj"]
 
-[ext_resource type="Script" uid="uid://bp6n3bqil4dc8" path="res://opening_screen.gd" id="1_ioda6"]
+[ext_resource type="Script" uid="uid://bp6n3bqil4dc8" path="res://opening screen/opening_screen.gd" id="1_ioda6"]
 [ext_resource type="Texture2D" uid="uid://bufy1yams1m1u" path="res://images + fonts/opening bg.JPG" id="2_ioda6"]
 [ext_resource type="FontFile" uid="uid://washjx6a7q1o" path="res://images + fonts/Alice_in_Wonderland_3.ttf" id="3_jy16x"]
 [ext_resource type="FontFile" uid="uid://b362dp5ycb451" path="res://images + fonts/OldLondon.ttf" id="4_wivb1"]
