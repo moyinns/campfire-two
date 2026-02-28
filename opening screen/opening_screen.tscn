@@ -1,0 +1,61 @@
+[gd_scene load_steps=6 format=3 uid="uid://bdmaitnkl5ccj"]
+
+[ext_resource type="Script" uid="uid://bp6n3bqil4dc8" path="res://opening_screen.gd" id="1_ioda6"]
+[ext_resource type="Texture2D" uid="uid://bufy1yams1m1u" path="res://images + fonts/opening bg.JPG" id="2_ioda6"]
+[ext_resource type="FontFile" uid="uid://washjx6a7q1o" path="res://images + fonts/Alice_in_Wonderland_3.ttf" id="3_jy16x"]
+[ext_resource type="FontFile" uid="uid://b362dp5ycb451" path="res://images + fonts/OldLondon.ttf" id="4_wivb1"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_xg5ki"]
+bg_color = Color(0.0061173034, 0.0061173034, 0.0061173034, 0.7137255)
+
+[node name="opening screen" type="Node2D"]
+script = ExtResource("1_ioda6")
+
+[node name="background" type="TextureRect" parent="."]
+offset_right = 1200.0
+offset_bottom = 675.0
+texture = ExtResource("2_ioda6")
+
+[node name="play_button" type="Button" parent="."]
+offset_left = 645.0
+offset_top = 245.0
+offset_right = 1057.0
+offset_bottom = 298.0
+theme_override_fonts/font = ExtResource("3_jy16x")
+theme_override_font_sizes/font_size = 50
+theme_override_styles/normal = SubResource("StyleBoxFlat_xg5ki")
+text = "play"
+
+[node name="settings_button" type="Button" parent="."]
+offset_left = 646.0
+offset_top = 379.0
+offset_right = 1058.0
+offset_bottom = 432.0
+theme_override_fonts/font = ExtResource("3_jy16x")
+theme_override_font_sizes/font_size = 50
+theme_override_styles/normal = SubResource("StyleBoxFlat_xg5ki")
+text = "quit"
+
+[node name="quit_button" type="Button" parent="."]
+offset_left = 646.0
+offset_top = 312.0
+offset_right = 1058.0
+offset_bottom = 365.0
+theme_override_fonts/font = ExtResource("3_jy16x")
+theme_override_font_sizes/font_size = 50
+theme_override_styles/normal = SubResource("StyleBoxFlat_xg5ki")
+text = "settings"
+
+[node name="game_title" type="Label" parent="."]
+offset_left = 598.0
+offset_top = 117.0
+offset_right = 1089.0
+offset_bottom = 213.0
+theme_override_colors/font_color = Color(0.112888634, 0.112888634, 0.112888634, 1)
+theme_override_fonts/font = ExtResource("4_wivb1")
+theme_override_font_sizes/font_size = 120
+text = "Game Title"
+
+[connection signal="pressed" from="play_button" to="." method="_on_play_button_pressed"]
+[connection signal="pressed" from="settings_button" to="." method="_on_settings_button_pressed"]
+[connection signal="pressed" from="quit_button" to="." method="_on_quit_button_pressed"]
